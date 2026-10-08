@@ -1,5 +1,6 @@
-# Object file
-*.o
+__pycache__/
+.pytest_cache/
+.venv/
 
-# Ada Library Information
-*.ali
+# gambar eksplorasi dihasilkan ulang saat analisis dijalankan; hanya gambar final yang disimpan
+output/gambar/[0-9]*.png

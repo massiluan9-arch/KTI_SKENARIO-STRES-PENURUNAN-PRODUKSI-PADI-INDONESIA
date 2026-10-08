@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675"
+     font-family="Arial, Helvetica, sans-serif">
+  <title>Kerangka UKUR – PRIORITASKAN – ANTISIPASI</title>
+  <defs>
+    <marker id="panah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,1 L9,5 L0,9" fill="none" stroke="#555555" stroke-width="1.4"/>
+    </marker>
+  </defs>
+
+  <rect id="latar" x="0" y="0" width="1200" height="675" fill="#FFFFFF"/>
+
+  <!-- ===== UKUR ===== -->
+  <g id="ukur">
+    <g id="ukur-judul">
+      <rect x="36" y="40" width="346" height="104" fill="#FFFFFF" stroke="#3C3C3C" stroke-width="1.3"/>
+      <text x="54" y="78" font-size="27" font-weight="bold" fill="#1F1F1F">UKUR</text>
+      <text x="54" y="112" font-size="21" fill="#2B2B2B">Seberapa besar risikonya?</text>
+    </g>
+    <g id="ukur-isi">
+      <rect x="36" y="162" width="346" height="186" fill="#FFFFFF" stroke="#8C8C8C" stroke-width="1"/>
+      <text font-size="21" fill="#222222">
+        <tspan x="54" y="198">– VaR &amp; TVaR 90–99,9%</tspan>
+        <tspan x="54" y="232">– Pita ketidakpastian</tspan>
+        <tspan x="71" y="260">parameter</tspan>
+        <tspan x="54" y="294">– Periode ulang &amp;</tspan>
+        <tspan x="71" y="322">% produksi</tspan>
+      </text>
+    </g>
+  </g>
+
+  <!-- ===== PRIORITASKAN ===== -->
+  <g id="prioritaskan">
+    <g id="prioritaskan-judul">
+      <rect x="426" y="44" width="380" height="104" fill="#FFFFFF" stroke="#3C3C3C" stroke-width="1.3"/>
+      <text x="444" y="82" font-size="27" font-weight="bold" fill="#1F1F1F">PRIORITASKAN</text>
+      <text font-size="21" fill="#2B2B2B">
+        <tspan x="444" y="114">Risiko mana yang perlu</tspan>
+        <tspan x="444" y="139">didahulukan?</tspan>
+      </text>
+    </g>
+    <g id="prioritaskan-isi">
+      <rect x="426" y="166" width="380" height="140" fill="#FFFFFF" stroke="#8C8C8C" stroke-width="1"/>
+      <text font-size="21" fill="#222222">
+        <tspan x="444" y="202">Matriks prioritas provinsi:</tspan>
+        <tspan x="444" y="236">porsi penurunan nasional ×</tspan>
+        <tspan x="444" y="264">kerugian relatif daerah</tspan>
+      </text>
+    </g>
+  </g>
+
+  <!-- ===== ANTISIPASI ===== -->
+  <g id="antisipasi">
+    <g id="antisipasi-judul">
+      <rect x="846" y="38" width="320" height="104" fill="#FFFFFF" stroke="#3C3C3C" stroke-width="1.3"/>
+      <text x="864" y="76" font-size="27" font-weight="bold" fill="#1F1F1F">ANTISIPASI</text>
+      <text x="864" y="110" font-size="21" fill="#2B2B2B">Apa yang perlu disiapkan?</text>
+    </g>
+    <g id="antisipasi-isi">
+      <rect x="846" y="160" width="320" height="168" fill="#FFFFFF" stroke="#8C8C8C" stroke-width="1"/>
+      <text font-size="21" fill="#222222">
+        <tspan x="864" y="196">– Skenario stres (<tspan font-style="italic">replay</tspan></tspan>
+        <tspan x="881" y="224">2019, empat sentra</tspan>
+        <tspan x="881" y="252">serentak)</tspan>
+        <tspan x="864" y="290">– Level risiko &amp; respons</tspan>
+      </text>
+    </g>
+  </g>
+
+  <!-- ===== Panah antarlangkah ===== -->
+  <g id="panah-alur" fill="none" stroke="#555555" stroke-width="1.4">
+    <line x1="384" y1="93" x2="422" y2="95" marker-end="url(#panah)"/>
+    <line x1="808" y1="94" x2="842" y2="91" marker-end="url(#panah)"/>
+    <polyline points="1004,330 1004,449 176,449" marker-end="url(#panah)"/>
+  </g>
+
+  <!-- ===== Level risiko ===== -->
+  <g id="level-risiko">
+    <text id="level-judul" x="38" y="456" font-size="22" font-weight="bold" fill="#1F1F1F">Level risiko</text>
+
+    <g id="level-normal">
+      <rect x="36" y="476" width="270" height="104" fill="#B9DDB2" stroke="#3F7F3A" stroke-width="1.1"/>
+      <text x="52" y="508" font-size="21" font-weight="bold" fill="#1F1F1F">Normal</text>
+      <text x="52" y="536" font-size="20" fill="#222222">S &lt; VaR 90%</text>
+      <text x="52" y="563" font-size="17" fill="#2A2A2A">(&lt; 2,74 juta ton GKG)</text>
+    </g>
+    <g id="level-waspada">
+      <rect x="318" y="476" width="278" height="104" fill="#F5DD7A" stroke="#A88514" stroke-width="1.1"/>
+      <text x="334" y="508" font-size="21" font-weight="bold" fill="#1F1F1F">Waspada</text>
+      <text x="334" y="536" font-size="20" fill="#222222">VaR 90–95%</text>
+      <text x="334" y="563" font-size="17" fill="#2A2A2A">(2,74–3,15 juta ton GKG)</text>
+    </g>
+    <g id="level-tinggi">
+      <rect x="608" y="476" width="272" height="104" fill="#F2AE68" stroke="#B0631C" stroke-width="1.1"/>
+      <text x="624" y="508" font-size="21" font-weight="bold" fill="#1F1F1F">Tinggi</text>
+      <text x="624" y="536" font-size="20" fill="#222222">VaR 95–99%</text>
+      <text x="624" y="563" font-size="17" fill="#2A2A2A">(3,15–4,01 juta ton GKG)</text>
+    </g>
+    <g id="level-ekstrem">
+      <rect x="892" y="476" width="274" height="104" fill="#E57F75" stroke="#A3352E" stroke-width="1.1"/>
+      <text x="908" y="508" font-size="21" font-weight="bold" fill="#1F1F1F">Ekstrem</text>
+      <text x="908" y="536" font-size="20" fill="#222222">S ≥ VaR 99%</text>
+      <text x="908" y="563" font-size="17" fill="#2A2A2A">(≥ 4,01 juta ton GKG)</text>
+    </g>
+
+    <text id="level-catatan" x="38" y="622" font-size="19" fill="#4A4A4A">Level risiko diperbarui setiap kali data BPS terbaru tersedia</text>
+  </g>
+</svg>

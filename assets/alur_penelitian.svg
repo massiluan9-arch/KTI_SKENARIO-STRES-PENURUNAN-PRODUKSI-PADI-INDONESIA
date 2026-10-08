@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="860" viewBox="0 0 1200 860"
+     font-family="Arial, Helvetica, sans-serif" font-size="20">
+  <title>Diagram Alur Penelitian</title>
+  <defs>
+    <marker id="panah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,1 L9,5 L0,9" fill="none" stroke="#555555" stroke-width="1.4"/>
+    </marker>
+  </defs>
+
+  <rect id="latar" x="0" y="0" width="1200" height="860" fill="#FFFFFF"/>
+
+  <!-- ===== Kolom 1: data dan estimasi ===== -->
+  <g id="kolom-1">
+    <text id="k1-judul" x="32" y="50" font-size="19" font-weight="bold" fill="#3C3C3C">1. Data dan estimasi</text>
+    <g fill="#FFFFFF" stroke="#3C3C3C" stroke-width="1.2">
+      <rect id="k1-b1" x="30" y="74" width="352" height="92"/>
+      <rect id="k1-b2" x="30" y="206" width="352" height="92"/>
+      <rect id="k1-b3" x="30" y="338" width="352" height="92"/>
+      <rect id="k1-b4" x="30" y="470" width="352" height="92"/>
+      <rect id="k1-b5" x="30" y="602" width="352" height="92"/>
+      <rect id="k1-b6" x="30" y="734" width="352" height="92"/>
+    </g>
+    <g fill="#222222" text-anchor="middle">
+      <text id="k1-t1"><tspan x="206" y="114">Data produksi padi 34 provinsi,</tspan><tspan x="206" y="141">2018–2025 (ton GKG)</tspan></text>
+      <text id="k1-t2"><tspan x="206" y="246"><tspan font-style="italic">Preprocessing</tspan> &amp; harmonisasi</tspan><tspan x="206" y="273">38 → 34 provinsi; validasi data</tspan></text>
+      <text id="k1-t3" x="206" y="391">Pembentukan <tspan font-style="italic">N</tspan>, <tspan font-style="italic">X</tspan>, dan <tspan font-style="italic">S</tspan></text>
+      <text id="k1-t4"><tspan x="206" y="510">Statistika deskriptif</tspan><tspan x="206" y="537">&amp; eksplorasi</tspan></text>
+      <text id="k1-t5"><tspan x="206" y="642">Penentuan kandidat distribusi</tspan><tspan x="206" y="669"><tspan font-style="italic">N</tspan> dan <tspan font-style="italic">X</tspan></tspan></text>
+      <text id="k1-t6" x="206" y="787">Estimasi parameter (MLE)</text>
+    </g>
+  </g>
+
+  <!-- ===== Kolom 2: pemodelan risiko kolektif ===== -->
+  <g id="kolom-2">
+    <text id="k2-judul" x="424" y="50" font-size="19" font-weight="bold" fill="#3C3C3C">2. Pemodelan risiko kolektif</text>
+    <g fill="#FFFFFF" stroke="#3C3C3C" stroke-width="1.2">
+      <rect id="k2-b1" x="422" y="74" width="378" height="92"/>
+      <rect id="k2-b2" x="422" y="206" width="378" height="92"/>
+      <rect id="k2-b3" x="422" y="338" width="378" height="92"/>
+      <rect id="k2-b4" x="422" y="470" width="378" height="92"/>
+      <rect id="k2-b5" x="422" y="602" width="378" height="92"/>
+      <rect id="k2-b6" x="422" y="734" width="378" height="92"/>
+    </g>
+    <g fill="#222222" text-anchor="middle">
+      <text id="k2-t1"><tspan x="611" y="114"><tspan font-style="italic">Parametric bootstrap</tspan> GOF</tspan><tspan x="611" y="141">(KS diskret; KS &amp; CvM)</tspan></text>
+      <text id="k2-t2"><tspan x="611" y="246">Seleksi AICc (AIC, BIC)</tspan><tspan x="611" y="273">→ distribusi final</tspan></text>
+      <text id="k2-t3"><tspan x="611" y="378">Uji independensi <tspan font-style="italic">N</tspan> dan <tspan font-style="italic">X</tspan></tspan><tspan x="611" y="405">(permutasi eksak)</tspan></text>
+      <text id="k2-t4"><tspan x="611" y="510">Simulasi Monte Carlo model</tspan><tspan x="611" y="537">risiko kolektif + cek konvergensi</tspan></text>
+      <text id="k2-t5"><tspan x="611" y="642">VaR &amp; TVaR; 1.000 replikasi</tspan><tspan x="611" y="669">→ MCE &amp; interval MC</tspan></text>
+      <text id="k2-t6" x="611" y="787">Interpretasi &amp; sensitivitas</text>
+    </g>
+  </g>
+
+  <!-- ===== Kolom 3: penerjemahan keputusan ===== -->
+  <g id="kolom-3">
+    <text id="k3-judul" x="842" y="50" font-size="19" font-weight="bold" fill="#3C3C3C">3. Penerjemahan keputusan</text>
+    <g fill="#FFFFFF" stroke="#3C3C3C" stroke-width="1.2">
+      <rect id="k3-b1" x="840" y="74" width="332" height="92"/>
+      <rect id="k3-b2" x="840" y="206" width="332" height="92"/>
+      <rect id="k3-b3" x="840" y="338" width="332" height="92"/>
+      <rect id="k3-b4" x="840" y="470" width="332" height="92"/>
+      <rect id="k3-b5" x="840" y="602" width="332" height="92"/>
+      <rect id="k3-b6" x="840" y="734" width="332" height="92"/>
+    </g>
+    <g fill="#222222" text-anchor="middle">
+      <text id="k3-t1"><tspan x="1006" y="114">Pita ketidakpastian parameter</tspan><tspan x="1006" y="141">(<tspan font-style="italic">parametric bootstrap</tspan>)</tspan></text>
+      <text id="k3-t2"><tspan x="1006" y="246">Skenario stres</tspan><tspan x="1006" y="273">(<tspan font-style="italic">replay</tspan> 2019; empat sentra)</tspan></text>
+      <text id="k3-t3" x="1006" y="391">Matriks prioritas provinsi</text>
+      <text id="k3-t4"><tspan x="1006" y="499">Kerangka UKUR–</tspan><tspan x="1006" y="523">PRIORITASKAN–ANTISIPASI</tspan><tspan x="1006" y="547">&amp; level risiko</tspan></text>
+      <text id="k3-t5"><tspan x="1006" y="642">Rekomendasi &amp; peta jalan</tspan><tspan x="1006" y="669">transfer gagasan</tspan></text>
+      <text id="k3-t6" x="1006" y="787">Kesimpulan dan saran</text>
+    </g>
+  </g>
+
+  <!-- ===== Panah ===== -->
+  <g id="panah-dalam-kolom" fill="none" stroke="#555555" stroke-width="1.3">
+    <line x1="206" y1="167" x2="206" y2="203" marker-end="url(#panah)"/>
+    <line x1="206" y1="299" x2="206" y2="335" marker-end="url(#panah)"/>
+    <line x1="206" y1="431" x2="206" y2="467" marker-end="url(#panah)"/>
+    <line x1="206" y1="563" x2="206" y2="599" marker-end="url(#panah)"/>
+    <line x1="206" y1="695" x2="206" y2="731" marker-end="url(#panah)"/>
+    <line x1="611" y1="167" x2="611" y2="203" marker-end="url(#panah)"/>
+    <line x1="611" y1="299" x2="611" y2="335" marker-end="url(#panah)"/>
+    <line x1="611" y1="431" x2="611" y2="467" marker-end="url(#panah)"/>
+    <line x1="611" y1="563" x2="611" y2="599" marker-end="url(#panah)"/>
+    <line x1="611" y1="695" x2="611" y2="731" marker-end="url(#panah)"/>
+    <line x1="1006" y1="167" x2="1006" y2="203" marker-end="url(#panah)"/>
+    <line x1="1006" y1="299" x2="1006" y2="335" marker-end="url(#panah)"/>
+    <line x1="1006" y1="431" x2="1006" y2="467" marker-end="url(#panah)"/>
+    <line x1="1006" y1="563" x2="1006" y2="599" marker-end="url(#panah)"/>
+    <line x1="1006" y1="695" x2="1006" y2="731" marker-end="url(#panah)"/>
+  </g>
+  <g id="panah-antarkolom" fill="none" stroke="#555555" stroke-width="1.3">
+    <polyline points="383,780 402,780 402,118 419,118" marker-end="url(#panah)"/>
+    <polyline points="801,780 820,780 820,122 837,122" marker-end="url(#panah)"/>
+  </g>
+</svg>
